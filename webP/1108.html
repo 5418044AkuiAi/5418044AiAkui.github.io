@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link href="styles/1028.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <title>HTMLの要素</title>
+  </head>
+  <body>
+      <h1>HTML要素の紹介</h1>
+        <p>
+          このwebサイトは日本大学文理学部情報科学科のWebプログラミングの演習課題である。
+        HTMLに様々ある要素の中から箇条書きを示すものについて3つ紹介する。
+        </p>
+        <h2>ol要素</h2> 
+            <p>箇条書きを示す際、順序を示すための数字やアルファベットを表示させたいときに
+                利用する要素がol要素である。&lt;ol type=&quot;X&quot;&gt;の形で使用することができ、Xの部分に
+                1・A・a・i・Ⅰのいずれかを入力することにより、順序の示し方を選択
+                することができる。</p>
+            <h3>例</h3>
+                <h4>type=&quot;1&quot;のとき</h4>
+                <h5>ソースコード</h5>
+                <pre><code>
+&lt;p&gt;目玉焼きの作り方&lt;/p&gt;
+&lt;ol type=&quot;1&quot; &gt;
+    &lt;li&gt;蓋つきのフライパン・玉子・キャベツ・油を用意する&lt;/li&gt;
+    &lt;li&gt;キャベツを千切りにする&lt;/li&gt;
+    &lt;li&gt;フライパンに油を引き、千切りキャベツを敷く&lt;/li&gt;
+    &lt;li&gt;キャベツの上に玉子を割る&lt;/li&gt;
+    &lt;li&gt;フライパンに蓋をし、蒸し焼く&lt;/li&gt;
+    &lt;li&gt;お好みのタイミングで完成&lt;/li&gt;
+&lt;/ol&gt;        
+                </code></pre>
+                <h5>実行例</h5>
+                <p>目玉焼きの作り方</p>
+                <ol type="1">
+                <li>蓋つきのフライパン・玉子・キャベツ・油を用意する</li>
+                <li>キャベツを千切りにする</li>
+                <li>フライパンに油を引き、千切りキャベツを敷く</li>
+                <li>キャベツの上に玉子を割る</li>
+                <li>フライパンに蓋をし、蒸し焼く</li>
+                <li>お好みのタイミングで完成</li>
+                </ol>        
+
+                <h4>type=&quot;A&quot;のとき</h4>
+                <h5>ソースコード</h5>
+                <pre><code>
+&lt;p&gt;次の選択肢のうち印象派の作曲家を選びなさい&lt;/p&gt;
+&lt;ol type=&quot;A&quot; &gt;
+    &lt;li&gt;モーツァルト&lt;/li&gt;
+    &lt;li&gt;ベートーベン&lt;/li&gt;
+    &lt;li&gt;ドビュッシー&lt;/li&gt;
+    &lt;li&gt;ショパン&lt;li&gt;
+&lt;/ol&gt;        
+                </code></pre>
+                <h5>実行例</h5>
+                <p>次の選択肢のうち印象派の作曲家を選びなさい</p>
+                <ol type="A">
+                    <li>モーツァルト</li>
+                    <li>ベートーベン</li>
+                    <li>ドビュッシー</li>
+                    <li>ショパン</li>
+                </ol>
+        <h2>ul要素</h2> 
+        <p>li要素を用いた時とは違い、データの順序を考慮せずに箇条書きをする際にul要素を用いる。</p>
+        <h3>例</h3>
+        <h5>ソースコード</h5>
+        <pre><code>
+&lt;p&gt;鞄の中身&lt;/p&gt;
+&lt;ul&gt;
+    &lt;li&gt;スマートフォン&lt;/li&gt;
+    &lt;li&gt;文具ポーチ&lt;li&gt;
+    &lt;li&gt;筆箱&lt;/li&gt;
+    &lt;li&gt;PC&lt;/li&gt;
+    &lt;li&gt;iPad&lt;/li&gt;
+    &lt;li&gt;メモ用の裏紙&lt;/li&gt;
+    &lt;li&gt;イヤホン&lt;/li&gt;
+&lt;/ul&gt;        
+        </code></pre>
+        <h5>実行例</h5>
+        <p>鞄の中身</p>
+        <ul>
+        <li>スマートフォン</li>
+        <li>文具ポーチ</li>
+        <li>筆箱</li>
+        <li>PC</li>
+        <li>iPad</li>
+        <li>メモ用の裏紙</li>
+        <li>イヤホン</li>
+        </ul>        
+
+        <h2>li要素</h2> 
+        <p>箇条書きをする際、要素を判別するために利用するのがli要素である。箇条書きの項目それぞれを
+            &lt;li&gt;X&lt;li&gt;と表現する。順序付きのリストを作る際、li要素にvalueの値を与える
+            ことにより順序のラベルを変更する事ができる</p>
+        <h3>例</h3>
+        <h5>ソースコード</h5>
+        <pre><code>
+&lt;p&gt;好きな音楽&lt;/p&gt;
+&lt;ul&gt;
+    &lt;li value = &quot;3&quot;&gt;diga diga doo&lt;/li&gt;
+    &lt;li value = &quot;1&quot;&gt;mambo influenciade&lt;li&gt;
+    &lt;li value = &quot;5&quot;&gt;just a little bit&lt;/li&gt;
+    &lt;li value = &quot;2&quot;&gt;color of the wind&lt;/li&gt;
+    &lt;li value = &quot;7&quot;&gt;恋の激ダサエクスタシー&lt;/li&gt;
+    &lt;li value = &quot;4&quot;&gt;Black Cherry&lt;/li&gt;
+    &lt;li value = &quot;6&quot;&gt;アリバイ&lt;/li&gt;
+&lt;/ul&gt;        
+        </code></pre>
+        <h5>実行例</h5>
+        <p>好きな音楽</p>        
+        <ol>
+            <li value ="3">diga diga doo</li>
+            <li value ="1">mambo influenciade</li>
+            <li value = "5">just a little bit</li>
+            <li value = "2">color of the wind</li>
+            <li value = "7">恋の激ダサエクスタシー</li>
+            <li value = "4">Black Cherry</li>
+            <li value = "6">アリバイ</li>
+            </ol>
+
+<h2>参考にしたもの</h2>
+<a href= "https://html.spec.whatwg.org/multipage/#toc-semantics" >HTML Living Standard</a>
+    
